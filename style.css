@@ -1,0 +1,645 @@
+@font-face {
+    font-family: pfdMedium;
+    src: url(PlayfairDisplay-Medium.ttf);
+}
+@font-face {
+    font-family: pfdRegular;
+    src: url(PlayfairDisplay-Regular.ttf);
+}
+
+body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+#logoplacing{
+    text-align: center;
+    background-color: rgb(40,19,50);
+}
+#logo{
+    background-color: transparent;
+}
+#navigation{
+    background-color: rgb(40,19,50);
+    padding-top: 15px;
+    padding-bottom: 2px;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+#navigation ul{
+    text-align: center;
+    margin-top: 0px;
+}
+#navigation ul li{
+    list-style-type: none;
+    color: white;
+    display: inline;
+}
+#navigation ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 18px;
+}
+#navigation ul li :hover{
+    text-decoration: none;
+    color: orange;
+    font-size: 18px;
+}
+#Section1{
+    background-image: url(images/rr8.jpg);
+    width: auto;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Section1 h1{
+    margin: 0px;
+    font-size: 50px;
+    font-family: pfdMedium;
+}
+#Section2{
+    background-color: whitesmoke;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#Section2 h1{
+    margin: 0px;
+    font-size: 30px;
+    font-family: pfdRegular;
+    border-bottom-color: orange;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+
+}
+#Section2 p{
+    font-size: 17px;
+}
+#Section2 div{
+    width: 400px;
+}
+#Section2 a{
+    text-decoration: none;
+}
+#merchandiselink{
+    font-size: 20px;
+    color: orange;
+    font-weight: 700;
+    text-decoration: underline;
+}
+#merchandiselink:hover{
+    color: blue;
+}
+#marror{
+    color: red;
+    font-size: 14px;
+}
+#Section3{
+    background-image: url(images/rr7.jpg);
+    width: auto;
+    height: 754px;
+}
+
+
+
+
+/*About Us Page Styling*/
+
+
+#Section4{
+    background-image: url(images/ab2.jpg);
+    width: auto;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Section4 h1{
+    color: white;
+    margin: 0px;
+    font-size: 55px;
+    font-family: pfdMedium;
+}
+#Section5{
+    color: white;
+    text-align: center;
+    
+}
+#Section5 div{
+   text-align: center;
+   display: flex;
+    justify-content: center;
+}
+#Section5 h1{
+    color: blue;
+    width: 400px;
+    text-align: center;
+    border-bottom-color: orange;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+#Section5 p{
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#Section6{
+    background-image: url(images/rr6.jpg);
+    width: auto;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Section6 h1{
+    color: white;
+    margin: 0px;
+    font-size: 55px;
+    font-family: pfdMedium;
+}
+#Section7{
+    color: white;
+    text-align: center;
+    
+}
+#Section7 div{
+   text-align: center;
+   display: flex;
+    justify-content: center;
+}
+#Section7 h1{
+    color: blue;
+    width: 400px;
+    text-align: center;
+    border-bottom-color: orange;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+#Section7 p{
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#Section8{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#Section8 div{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#Section8 h1{
+    color: blue;
+    width: 400px;
+    text-align: center;
+    border-bottom-color: orange;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+#Section8 p{
+    color: white;
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#AboutDevelopers{
+    font-size: 20px;
+}
+#AboutDevelopers a{
+    text-decoration: none;
+    color: orange;
+    text-decoration: underline;
+}
+#AboutDevelopers a:hover{
+    font-size: 21px;
+    text-decoration: underline;
+    color: blue;
+}
+
+
+
+/*Enquires Page Styling*/
+
+#Section9{
+    background-image: url(images/eq1.jpg);
+    width: auto;
+    height: 504px;
+}
+#Section10{
+    height: 550px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+#Section10 div{
+    width: 400px;
+    text-align: center;
+}
+#Section10 li{
+    list-style-type: none;
+}
+#Section10 li a{
+    text-decoration: none;
+    color: white;
+}
+#Section10 li a:hover{
+    color: orange;
+}
+.fa-map-location-dot{
+    color: purple;
+    font-size: 70px;
+}
+.fa-map-location-dot:hover{
+    color: orange;
+}
+.fa-phone{
+    color: purple;
+    font-size: 70px;
+}
+.fa-phone:hover{
+    color: orange;
+}
+.fa-envelope{
+    color: purple;
+    font-size: 70px;
+}
+.fa-envelope:hover{
+   color: orange;
+}
+#Section11{
+    background-color: rgb(255,255,255);
+    
+}
+#Section11container1{
+    display: flex;
+    justify-content: center;
+}
+#Section11container1 div h1{
+    color: blue;
+    width: 400px;
+    text-align: center;
+    border-bottom-color: orange;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+#Section11container2{
+    display: flex;
+    justify-content: center;
+}
+#Section11container3{
+    display: flex;
+    justify-content: center;
+}
+#Section12{
+    background-color: black;
+    height: 100px;
+    text-align: center;
+}
+.fa-facebook-f, .fa-instagram, .fa-twitter, .fa-youtube{
+    color: purple;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.fa-facebook-f:hover, .fa-instagram:hover, .fa-twitter:hover, .fa-youtube:hover{
+    color: orange;
+}
+table{
+    width: 500px;
+    height: 300px;  
+}
+#i1{
+    width: 220px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px;
+    border-style: solid;
+    padding: 3px;
+}
+#i2{
+    width: 220px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px;
+    border-style: solid;
+    padding: 3px;
+}
+#i3{
+    width: 220px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px;
+    border-style: solid;
+    padding: 3px;
+}
+#i4{
+    width: 220px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px;
+    border-style: solid;
+    padding: 3px;
+}
+#i5 {
+    width: 470px;
+    height: 130px;
+    border-radius: 4px;
+    border: 1px solid;
+    padding: 5px;
+    text-align: center;
+    
+}
+#Submitbutton{
+    height: 60px;
+    width: 160px;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: orange;
+    color: white;
+}
+#Submitbutton:hover{
+    background-color: blue;
+}
+
+
+
+
+/*Developers Page Styling*/
+
+
+#Section13{
+    background-color: black;
+    height: 600px;
+}
+#Section13 h1{
+    color: white;
+    text-align: center;
+    width: 400px;
+    border-bottom-color: orange;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+#Section13container2{
+    display: flex;
+    justify-content: center;
+}
+#Section13container1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+#Section13container1 div{
+    background-color: purple;
+    text-align: center;
+    width: 300px;
+    height: 420px;
+    border-radius: 5px;
+    padding-top: 15px;
+}
+#Section13container1 p{
+    font-weight: 700;
+    color: orange;
+}
+#saviourimage{
+    border-radius: 50%;
+}
+#louisimage{
+    border-radius: 50%;
+}
+#fb{
+    color: white;
+    font-size: 25px;
+}
+#yt{
+    color: white;
+    font-size: 25px;
+}
+#ig{
+    color: white;
+    font-size: 25px;
+}
+#tt{
+    color: white;
+    font-size: 25px;
+}
+#fb:hover,#yt:hover,#ig:hover,#tt:hover{
+    color: orange;
+}
+#Section14{
+    background-color: purple;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+}
+#Section14 div{
+    width: 400px;
+}
+#Section14 img{
+    border-radius: 5px;
+}
+#Section14 div h1{
+    color: orange;
+    font-weight: 700;
+}
+#Section14 div p{
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+#Section15{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+}
+#Section15 div{
+    width: 400px;
+}
+#Section15 img{
+    border-radius: 5px;
+}
+#Section15 div h1{
+    color: orange;
+    font-weight: 700;
+}
+#Section15 div p{
+    font-size: 17px;
+    font-weight: 700;
+}
+#Section16{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+}
+#Section16 div{
+    width: 400px;
+}
+#Section16 img{
+    border-radius: 5px;
+}
+#Section16 div h1{
+    color: orange;
+    font-weight: 700;
+}
+#Section16 div p{
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+#Section17{
+    background-color: white;
+    height: 400px;
+}
+#Section17container1{
+    display: flex;
+    justify-content: center;
+}
+#Section17container1 div h1{
+    color: blue;
+    width: 400px;
+    text-align: center;
+    border-bottom-color: orange;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+#Section17 h1{
+    color: orange;
+    text-align: center;
+}
+#Section18 div{
+    text-align: center;
+}
+#Section18 div img{
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+}
+.wb{
+    font-size: 15px;
+}
+
+/*Merchandise Page Styling*/
+
+#merchandise{
+    text-align: center;
+    color: orange;
+}
+#Section19container1,#Section19container2,#Section19container3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom-width: 2px;
+    border-bottom-color: orange;
+    border-bottom-style: solid;
+}
+#Section19container4{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+#Section19container1 div,#Section19container2 div,#Section19container3 div,#Section19container4 div{
+    width: 400px;
+    text-align: center;
+}
+#Section19container1 div,#Section19container2 div,#Section19container3 div,#Section19container4 div{
+    font-weight: 700;
+}
+.fa-arrow-right{
+    color: red;
+    font-size: 19px;
+}
+.discover{
+    padding: 15px;
+    width: 170px;
+    font-size: 20px;
+    border-radius: 14px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+.discover:hover{
+    background-color: orange;
+}
+
+/* Models page Styling*/
+
+
+#navigation2{
+    background-image: url(images/glitterblack.jpg);
+    width: auto;
+    height: 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+#navigation2 ul li{
+    list-style-type: none;
+    display: inline;
+    
+}
+#navigation2 ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 22px;
+    font-weight: bold;
+}
+#navigation2 ul li a:hover{
+    border-bottom-style: solid;
+    border-bottom-color: orange;
+}
+
+#Section20{
+    color: black;
+    background-image: url(images/4models.jpg);
+    width: auto;
+    height: 542px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 22px;
+    font-family: pfdRegular;
+}
+
+#arr{
+    color: orange;
+}
+
+#Section22{
+    text-align: center;
+    color: white;
+}
+#Section22 h1{
+    color: orange;
+}
+#Section22 li{
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+#Section22 li:hover{
+    color: orange;
+}
+footer{
+    background-color: rgb(0,0,0);
+    height: 130px;
+    text-align: center;
+    color: white;
+}
+footer p{
+    margin-top: 0px;
+}
