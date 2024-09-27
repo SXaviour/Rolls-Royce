@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rolls Royce-Enquires</title>
+    <title>Rolls Royce - Enquires</title>
+    
+    <!-- Link to the stylesheet -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Font: Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
     <script src="https://kit.fontawesome.com/726ca1eae5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div id="logoplacing">
+            <!-- Rolls Royce logo -->
             <img src="images/rollslogo2.png" alt="Rolls Royce Logo" style="background-color: transparent;">
         </div>
         <nav id="navigation">
             <ul id="navigationlist">
+                <!-- Navigation links -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="models.html">Models</a></li>
@@ -25,15 +35,16 @@
             </ul>
         </nav>
     </header>
-    <section id="Section9">
-
-    </section>
+    
+    <section id="Section9"></section>
+    
     <section id="Section10">
         <div>
             <i class="fa-solid fa-map-location-dot"></i>
             <h2>Address</h2>
+            <!-- Addresses for different locations -->
             <h3>Rolls Royce England</h3>
-            <li>Kings Place,90 York Way,LONDON,N1 9FX,England</li>
+            <li>Kings Place, 90 York Way, LONDON, N1 9FX, England</li>
             <h3>Rolls Royce USA</h3>
             <li>Rolls-Royce Motor Cars, One Arnage Blvd, Chesterfield, MO 63005, United States</li>
             <h3>Rolls Royce China</h3>
@@ -42,6 +53,7 @@
         <div>
             <i class="fa-solid fa-phone"></i>
             <h2>Phone</h2>
+            <!-- Phone numbers for different locations -->
             <h3>Rolls Royce England</h3>
             <li>01332 242424</li>
             <h3>Rolls Royce USA</h3>
@@ -52,6 +64,7 @@
         <div>
             <i class="fa-solid fa-envelope"></i>
             <h2>Email</h2>
+            <!-- Email addresses for different locations -->
             <h3>Rolls Royce England</h3>
             <li><a href="mailto:eu.affairs@rolls-royce.com">eu.affairs@rolls-royce.com</a></li>
             <h3>Rolls Royce USA</h3>
@@ -60,14 +73,17 @@
             <li><a href="mailto:customer.relationschina@rolls-roycemotorcars.com">customer.relationschina@rolls-roycemotorcars.com</a></li>
         </div>
     </section>
+    
     <section id="Section12">
         <div>
-            <a href="https://facebook.com/@rollsroycemotorcars "><i class="fa-brands fa-facebook-f"></i></a>
+            <!-- Social media links -->
+            <a href="https://facebook.com/@rollsroycemotorcars"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="https://youtube.com/@RollsRoyceCars"><i class="fa-brands fa-youtube"></i></a>
             <a href="https://instagram.com/rollsroycecars"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://twitter.com/@RollsRoyce"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </section>
+    
     <section id="Section11">
         <div id="Section11container1">
             <div>
@@ -78,29 +94,59 @@
             <div>
                 <table>
                     <tr>
-                        <td><input id="i1" type="text" placeholder="First Name*"></td>
-                        <td><input id="i2" type="text" placeholder="Last Name*"></td>
+                        <td><input id="i1" type="text" placeholder="First Name*" required></td>
+                        <td><input id="i2" type="text" placeholder="Last Name*" required></td>
                     </tr>
                     <tr>
-                        <td><input id="i3" type="text" placeholder="Email*"></td>
+                        <td><input id="i3" type="email" placeholder="Email*" required></td>
                         <td><input id="i4" type="text" placeholder="Phone"></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input id="i5" type="text" placeholder="What can we do for you?"></td>
+                        <td colspan="2"><input id="i5" type="text" placeholder="What can we do for you?" required></td>
                     </tr>
-                    
                 </table>
             </div>
         </div>
         <div id="Section11container3">
             <div>
-                <button id="Submitbutton">Submit</button><br><br>
+                <!-- Submit button with validation -->
+                <button id="Submitbutton" onclick="validateForm()">Submit</button><br><br>
             </div>
         </div>
     </section>
+    
     <footer>
+        <!-- Footer with Rolls Royce logo and company name -->
         <a href="https://www.rolls-roycemotorcars.com/en_GB/home.html"><img src="images/rollslogoupt.png" alt="Rolls Royce logo"></a>
         <p>Rolls Royce Motor Company</p>
     </footer>
+    
+    <script>
+        // Function to validate the contact form
+        function validateForm() {
+            // Retrieve values from the input fields
+            const firstName = document.getElementById('i1').value.trim();
+            const lastName = document.getElementById('i2').value.trim();
+            const email = document.getElementById('i3').value.trim();
+            const message = document.getElementById('i5').value.trim();
+
+            // Check if all required fields are filled
+            if (!firstName || !lastName || !email || !message) {
+                alert("Please fill in all required fields.");
+                return false;
+            }
+
+            // Basic email format validation using regular expression
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            // Alert user upon successful validation
+            alert("Thank you for your submission!");
+            return true; // You can proceed with form submission here
+        }
+    </script>
 </body>
 </html>

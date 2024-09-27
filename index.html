@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rolls Royce-Home</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibility with Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design viewport -->
+    <title>Rolls Royce - Home</title> <!-- Title of the web page -->
+    
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconnect for font loading -->
+    
+    <!-- Google Font: Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
     <script src="https://kit.fontawesome.com/726ca1eae5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div id="logoplacing">
+            <!-- Rolls Royce logo -->
             <img src="images/rollslogo2.png" alt="Rolls Royce Logo" style="background-color: transparent;">
         </div>
         <nav id="navigation">
             <ul id="navigationlist">
+                <!-- Navigation links -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="models.html">Models</a></li>
@@ -25,27 +32,53 @@
             </ul>
         </nav>
     </header>
+    
     <section id="Section1">
-            <h1>Rolls Royce</h1>
+        <h1>Rolls Royce</h1> <!-- Main heading for the page -->
     </section>
+    
     <section id="Section2">
         <div>
-            <h1>Luxury Is Price</h1>
+            <h1>Luxury Is Price</h1> <!-- Subheading about luxury -->
+            <!-- Description about Rolls Royce luxury -->
             <p>When it comes to luxury, one brand has consistently epitomized elegance, opulence, and prestige: Rolls-Royce. Synonymous with sophistication and refinement, Rolls-Royce automobiles have become the epitome of luxury on wheels. However, it is important to recognize that luxury is not merely defined by its price. In fact, Rolls-Royce's allure lies in its exceptional craftsmanship, attention to detail, and the unparalleled experience it offers to its discerning clientele.</p>
+            <!-- Link to merchandise page with an arrow icon -->
             <a href="merchandise.html"><p id="merchandiselink">Check out our Merchandise here <i id="marror" class="fa-sharp fa-solid fa-arrow-right"></i></p></a>
         </div>
         <div>
-            <img  src="images/rr9.jpg" alt="Interior of a Rolls Royce">
+            <!-- Image showcasing the interior of a Rolls Royce -->
+            <img src="images/rr9.jpg" alt="Interior of a Rolls Royce">
         </div>
     </section>
+    
     <section id="Section3">
-        
+        <div id="greeting"></div> <!-- Placeholder for dynamic greeting -->
     </section>
+    
     <footer>
+        <!-- Footer with link to Rolls Royce website and logo -->
         <a href="https://www.rolls-roycemotorcars.com/en_GB/home.html"><img src="images/rollslogoupt.png" alt="Rolls Royce logo"></a>
-        <p>Rolls Royce Motor Company</p>
+        <p>Rolls Royce Motor Company</p> <!-- Footer text -->
     </footer>
-    <script src="script.js"></script>
-</body>
+    
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+    
+    <script>
+        // Dynamic greeting based on time of day
+        const greetingElement = document.getElementById('greeting'); // Get the greeting placeholder element
+        const hours = new Date().getHours(); // Get the current hour
+        let greeting; // Variable to hold the greeting message
 
-</html> 
+        // Determine the appropriate greeting based on the hour of the day
+        if (hours < 12) {
+            greeting = "Good Morning!"; // Morning greeting
+        } else if (hours < 18) {
+            greeting = "Good Afternoon!"; // Afternoon greeting
+        } else {
+            greeting = "Good Evening!"; // Evening greeting
+        }
+
+        greetingElement.innerText = greeting; // Set the inner text of the greeting element
+    </script>
+</body>
+</html>
